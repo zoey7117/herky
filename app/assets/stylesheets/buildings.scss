@@ -1,3 +1,128 @@
 // Place all the styles related to the buildings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html body {
+  background: url("cityscape.png");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-color: black;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  text-shadow: 4px 4px 8px #000000;
+}
+
+
+#apartment_apt_num, #apartment_size, #apartment_num_rooms,
+#apartment_num_windows, #apartment_building_id,
+#building_address, #building_name, #building_num_floors, #building_walkup, #building_pets,
+#user_email, #user_password {
+  background: none;
+     outline: none;
+     font-family: 'Anton', sans-serif;
+     color: white;
+     padding-left: 15px;
+}
+#building_walkup, #building_pets, #apartment_building_id {
+  border: 3px white;
+}
+
+.container {
+  width: large;
+  margin-top: 40px;
+  padding: 20px;
+
+}
+
+.buildings h2 {
+  font-family: 'Anton', sans-serif;
+  color: white;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  color: rgba(255,0,0, 0.6);
+  font-size: 60px;
+}
+
+.individual.bldg h2 {
+  font-family: 'Lobster', cursive;
+  color: rgba(255,0,0, 0.6);
+  font-size: 60px;
+}
+
+.lone.bldg a, .most_apt a, .individual.bldg .back_button_bldg a, .container .back_button_bldg a {
+  font-family: 'Anton', sans-serif;
+  color: rgba(255,0,0, 0.6);
+  font-size: 30px;
+}
+
+.buildings h3 a{
+  color: rgba(255,0,0, 0.6);
+  font-size: 45px;
+  font-family: 'Lobster', cursive;
+  line-height: 1.25;
+}
+
+.buildings h4 a, .lone.building h4 a, .individual.bldg ul h4 a, ul h4 a{
+  color: rgba(255,0,0, 0.6);
+  font-size: 35px;
+  font-family: 'Lobster', cursive;
+  line-height: 1.75;
+}
+
+.submit input, .actions input {
+  background: black;
+  font-family: 'Anton', sans-serif;
+  color: rgba(255,0,0, 0.6);
+}
+.submit input:hover, .actions input:hover {
+  text-align: center;
+  background: black;
+  font-family: 'Anton', sans-serif;
+  color: rgba(255,255,255, 0.6);
+}
+
+.opener {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h5, h6 {
+  font-size: 30px;
+  font-family: 'Anton', sans-serif;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h6 {
+  line-height: 1.75;
+}
+
+form {
+  text-align: left;
+    display: inline-block;
+}
+
+
+a {
+  color: rgba(255,0,0, 0.6);
+}
+
+.buildings h4 a:hover, .buildings h3 a:hover, a:hover, .individual.bldg .back_button_bldg a:hover, .lone.bldg a:hover, .most_apt a:hover, .container .back_button_bldg a:hover, .individual.bldg ul h4 a:hover, ul h4 a:hover {
+  color: rgba(255,255,255, 0.6);
+}
+
+h1 {
+  color: white;
+  font-size: 150px;
+  font-family: 'Lobster', cursive;
+  line-height: .75;
+}

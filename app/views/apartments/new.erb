@@ -1,0 +1,20 @@
+<h2>new apartment</h2><br>
+
+<%= form_for @apartment, html: { autocomplete: "off" } do |f| %>
+<%= f.label :apartment_number %><br>
+<%= f.text_field :apt_num %><br>
+
+<%= f.label :size_in_square_feet %><br>
+<%= f.number_field :size %><br>
+<%= f.label :number_of_rooms %><br>
+<%= f.number_field :num_rooms %><br>
+<%= f.label :number_of_windows %><br>
+<%= f.number_field :num_windows %><br>
+<div class='select_bldg'>
+  <%= f.label :select_building%>
+  <%= f.collection_select :building_id, @buildings, :id, :name %><br><br>
+</div>
+<div class='submit'>
+  <%= f.submit %>
+</div>
+<% end %>

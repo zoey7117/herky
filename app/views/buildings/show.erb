@@ -3,12 +3,10 @@
 
     <h2><%=@building.name%></h2>
 
-    Walkup:
-    <%=yesno(@building.walkup)%><br>
+    Elevator:
+    <%=yesno(@building.elevator)%><br>
     Pets allowed:
     <%= @building.pets%><br>
-    Largest apartment in building:
-    <%= @big_apt.apt_num%><br>
     Available apartments in building:
     <%=@building.apartments.count%><br>
     <div class='lone bldg'>
