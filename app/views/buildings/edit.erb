@@ -1,0 +1,26 @@
+<h2>update building</h2><br>
+
+<% if flash[:errors]%>
+  <%= flash[:errors]%>
+<%end%><br>
+
+<div class='building_form'>
+
+  <%= form_for @building, html: { autocomplete: "off" } do |f|%>
+  <%= f.label :name%><br>
+  <%= f.text_field :name %><br>
+  <%= f.label :elevator%>
+
+  <%= f.select :walkup, [['no', false], ['yes', true]] %><br>
+  <%= f.label :select_pets%>
+  <%= f.select :pets, ['Cats only', 'No Pets', 'Dogs and Cats', 'All are welcome']%><br>
+  <%= f.label :number_Of_Floors%><br>
+  <%= f.number_field :num_floors %><br>
+  <%= f.label :address%><br>
+  <%= f.text_field :address %><br><br>
+<div class='submit'>
+  <%= f.submit%>
+  </div>
+<%end%>
+
+</div>

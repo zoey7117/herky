@@ -1,0 +1,16 @@
+<div class='opener'>
+  <h5>looking for<br>
+    the perfect place to<br>
+    hang your hat?<br><br>
+    check out</h5>
+  <!-- <p>habitat haven</p> -->
+  <h1>abode haven</h1><br>
+
+  <h6><%= link_to 'enter', buildings_path %></h6><br><br>
+
+  <% if current_user %>
+    <h6><%= link_to 'sign out', destroy_user_session_path, method: :delete %></h6><br>
+  <% else %>
+    <h6><%= link_to 'sign in admin', new_user_session_path %></h6><br>
+  <% end%>
+</div>
