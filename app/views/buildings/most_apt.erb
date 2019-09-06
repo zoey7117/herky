@@ -1,0 +1,22 @@
+<h2><%= @building_most_apts.name %></h2>
+
+
+
+
+Walkup:
+<%=yesno(@building_most_apts.walkup)%><br>
+Pets:
+<%=@building_most_apts.pets%><br>
+Available apartments in building:
+<%=@building_most_apts.apartments.count%><br>
+
+<div class='most_apt'>
+<%@building_most_apts.apartments.each do |apartment|%>
+  <a><%=link_to apartment.apt_num, apartment_path(apartment) %></a><br>
+<% end %><br><br>
+</div>
+
+
+<div class=back_button_bldg>
+<%= link_to 'back to buildings', buildings_path %>
+</div>

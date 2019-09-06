@@ -1,0 +1,28 @@
+<div class='buildings'>
+  <ul>
+
+    <h2>
+      abode haven buildings
+    </h2><br>
+
+    <% @buildings.each do |building| %>
+      <h3><%= link_to building.name, building_path(building) %></h3>
+      Elevator:
+      <%=yesno(building.walkup)%><br>
+      Number of floors:
+      <%=building.num_floors%><br>
+      Pets allowed:
+      <%=building.pets%><br><br>
+
+    <% end %>
+
+    <% if current_user && current_user.admin %>
+      <h4><%= link_to 'new building listing', new_building_path%><br>
+        <a href="http://localhost:3000/admin">admin portal</a>
+      </h4>
+    <%else%>
+      <h4><%= link_to 'building with the most available apartments', most_apt_path%></h4><br><br>
+
+    <%end%>
+  </ul>
+</div>
