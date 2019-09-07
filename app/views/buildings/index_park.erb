@@ -20,7 +20,8 @@
       <h4><%= link_to 'new building listing', new_building_path%><br>
         <a href="http://localhost:3000/admin">admin portal</a>
       </h4>
-  
+    <%else%>
+      <h4><%= link_to 'building with the most available apartments', most_apt_path%></h4><br><br>
 
     <%end%>
   </ul>

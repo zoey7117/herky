@@ -36,9 +36,10 @@ class BuildingsController < ApplicationController
     end
   end
 
-  def most_apt
-    @building_most_apts = Building.most_apt
-  end
+  # def most_apt
+  #   binding.pry
+  #   @building_most_apts = Building.most_apt
+  # end
 
   def most_floors
     @buildings_most_floors = Building.most_floors
