@@ -13,19 +13,13 @@ html body {
   text-shadow: 4px 4px 8px #000000;
 }
 
-
-#apartment_apt_num, #apartment_size, #apartment_num_rooms,
-#apartment_num_windows, #apartment_building_id,
-#building_address, #building_name, #building_num_floors, #building_walkup, #building_pets,
-#user_email, #user_password {
-  background: none;
-     outline: none;
-     font-family: 'Anton', sans-serif;
-     color: white;
-     padding-left: 15px;
-}
-#building_walkup, #building_pets, #apartment_building_id {
-  border: 3px white;
+.opener {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .container {
@@ -35,22 +29,53 @@ html body {
 
 }
 
-.buildings h2 {
+.opener h1 {
+  color: white;
+  font-size: 150px;
+  font-family: 'Lobster', cursive;
+  line-height: .75;
+}
+
+
+.buildings ul h2 {
   font-family: 'Anton', sans-serif;
   color: white;
-  font-size: 50px;
+  font-size: 55px;
 }
 
-h2 {
+ul h2, .buildings ul h3 a, .container h2{
   font-family: 'Lobster', cursive;
   color: rgba(255,0,0, 0.6);
-  font-size: 60px;
+  font-size: 55px;
 }
 
-.individual.bldg h2 {
-  font-family: 'Lobster', cursive;
+.opener h5, .opener h6 {
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.opener h6 a{
   color: rgba(255,0,0, 0.6);
-  font-size: 60px;
+}
+
+
+h6 {
+  line-height: 1.75;
+}
+// .individual.bldg h2 {
+//   font-family: 'Lobster', cursive;
+//   color: rgba(255,0,0, 0.6);
+//   font-size: 60px;
+// }
+a {
+  color: rgba(255,0,0, 0.6);
+}
+
+.opener h6 a:hover, .buildings h4 a:hover, .buildings h3 a:hover, a:hover, .individual.bldg .back_button_bldg a:hover, .lone.bldg a:hover, .most_apt a:hover, .container .back_button_bldg a:hover, .individual.bldg ul h4 a:hover, ul h4 a:hover {
+  color: rgba(255,255,255, 0.6);
 }
 
 .lone.bldg a, .most_apt a, .individual.bldg .back_button_bldg a, .container .back_button_bldg a {
@@ -73,6 +98,19 @@ h2 {
   line-height: 1.75;
 }
 
+#apartment_apt_num, #apartment_size, #apartment_num_rooms,
+#apartment_num_windows, #apartment_building_id,
+#building_address, #building_name, #building_num_floors, #building_walkup, #building_pets,
+#user_email, #user_password {
+  background: none;
+  outline: none;
+  font-family: 'Anton', sans-serif;
+  color: white;
+  padding-left: 15px;
+}
+#building_elevator, #building_pets, #apartment_building_id {
+  border: 3px white;
+}
 .submit input, .actions input {
   background: black;
   font-family: 'Anton', sans-serif;
@@ -85,44 +123,7 @@ h2 {
   color: rgba(255,255,255, 0.6);
 }
 
-.opener {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-h5, h6 {
-  font-size: 30px;
-  font-family: 'Anton', sans-serif;
-  line-height: 1.25;
-  letter-spacing: 0.05em;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-h6 {
-  line-height: 1.75;
-}
-
 form {
   text-align: left;
     display: inline-block;
-}
-
-
-a {
-  color: rgba(255,0,0, 0.6);
-}
-
-.buildings h4 a:hover, .buildings h3 a:hover, a:hover, .individual.bldg .back_button_bldg a:hover, .lone.bldg a:hover, .most_apt a:hover, .container .back_button_bldg a:hover, .individual.bldg ul h4 a:hover, ul h4 a:hover {
-  color: rgba(255,255,255, 0.6);
-}
-
-h1 {
-  color: white;
-  font-size: 150px;
-  font-family: 'Lobster', cursive;
-  line-height: .75;
 }

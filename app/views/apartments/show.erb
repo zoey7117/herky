@@ -1,3 +1,4 @@
+<div class = 'apt_show'>
 <ul>
   <h2><%= @apartment.building.name %></h2><br>
 
@@ -15,7 +16,7 @@
       <h4><%= link_to 'update '+ @apartment.apt_num , edit_apartment_path(@apartment)%><br>
         <%= link_to 'delete '+ @apartment.apt_num , apartment_path(@apartment), method: :delete, data: { confirm: 'are u sure?' } %><br>
         <%= link_to 'sign out', destroy_user_session_path, method: :delete %><br></h4>
-    
+
   <%else%>
     If you would like to schedule a viewing<br>please email@xyz.com or phone 212-555-5555.<br><br>
     <h4><%= link_to 'more apartments available at ' + @apartment.building.name, @apartment.building%><br>
@@ -25,3 +26,4 @@
     <%= link_to 'back to buildings', buildings_path(@buildings)%><br>
   </div>
 </ul>
+</div>
