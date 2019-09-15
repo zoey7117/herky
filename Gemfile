@@ -5,6 +5,11 @@ ruby '2.6.1'
 
 gem 'aws-sdk', '~> 2'
 
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+
+
+gem 'fog-aws', '~> 0.7.6'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 # Use postgresql as the database for Active Record
