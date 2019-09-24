@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+
  .home_video {
   width: 100vw;
   height: 100vh;
@@ -22,7 +26,7 @@
   z-index: -2;
  }
 
- 
+
 
  .home-video-wrapper {
  height: 100vh;
