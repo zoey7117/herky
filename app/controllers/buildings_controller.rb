@@ -5,22 +5,14 @@ class BuildingsController < ApplicationController
     @buildings = Building.all
   end
 
-
   def home
-
-
   end
 
   def show
     @building = Building.find(params[:id])
     @big_apt = @building.biggest_apt
     # @big_apt = @building.largest_apt
-
-
   end
-
-
-
 
   def new
     @building = Building.new
@@ -44,9 +36,6 @@ class BuildingsController < ApplicationController
     @buildings_most_floors = Building.most_floors
   end
 
-
-
-
   def edit
     @building = Building.find(params[:id])
     @apartments = Apartment.find_by(params[:building_id])
@@ -57,7 +46,6 @@ class BuildingsController < ApplicationController
     @building.update(building_params)
     redirect_to building_path(@building)
   end
-
 
   def destroy
     @building = Building.find(params[:id])
