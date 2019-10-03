@@ -13,15 +13,15 @@
       <%=building.num_floors%><br>
       Pets allowed:
       <%=building.pets%><br><br>
-
     <% end %>
 
     <% if current_user && current_user.admin %>
       <h4><%= link_to 'new building listing', new_building_path%><br>
         <a href="https://abodehaven.herokuapp.com/admin">admin portal</a>
       </h4>
-
-
     <%end%>
+    <div class='back_button_bldg'>
+    <%= link_to 'back', root_path%><br>
+    </div>
   </ul>
 </div>

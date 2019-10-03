@@ -53,8 +53,8 @@ ul h2 {
   font-size: 55px;
 }
 
-.opener h5,
-.opener h6 {
+.opener h5 {
+// .opener h6 {}{
   font-size: 40px;
   font-family: 'Anton', sans-serif;
   line-height: 1.25;
@@ -83,14 +83,16 @@ a {
 .most_apt a:hover,
 .opener h6 a:hover,
 a:hover,
-ul h4 a:hover {
+ul h4 a:hover,
+.opener h6:hover {
   color: rgba(255,255,255, 0.6);
 }
 
 .container .back_button_bldg a,
 .individual.bldg .back_button_bldg a,
 .lone.bldg a,
-.most_apt a {
+.most_apt a,
+.opener h6 {
   font-family: 'Anton', sans-serif;
   color: rgba(255,0,0, 0.6);
   font-size: 30px;
