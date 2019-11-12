@@ -4,9 +4,7 @@
 
 html body {
   background: url("cityscape.png");
-// background: url('https://sendeyo.com/up/d/9525003718');
-// background: url('https://photos.google.com/photo/AF1QipOYzS5uDH3VyhoW5GsHoAVZy_wsdCWSqkD7mbe0');
-  // url("http://abode-haven.s3.amazonaws.com/cityscape.png");
+
   background-size: 100%;
   background-attachment: fixed;
   background-color: none;
@@ -34,7 +32,7 @@ html body {
 
 .opener h1 {
   color: white;
-  font-size: 120px;
+  font-size: 90px;
   font-family: 'Lobster', cursive;
   line-height: 0.75;
 }
@@ -42,7 +40,7 @@ html body {
 .buildings ul h2 {
   font-family: 'Anton', sans-serif;
   color: white;
-  font-size: 55px;
+  font-size: 42px;
 }
 
 .buildings ul h3 a,
@@ -50,12 +48,12 @@ html body {
 ul h2 {
   font-family: 'Lobster', cursive;
   color: rgba(255,0,0, 0.6);
-  font-size: 55px;
+  font-size: 42px;
 }
 
 .opener h5 {
 // .opener h6 {}{
-  font-size: 30px;
+  font-size: 23px;
   font-family: 'Anton', sans-serif;
   line-height: 1.25;
   letter-spacing: 0.05em;
@@ -95,12 +93,12 @@ ul h4 a:hover,
 .opener h6 {
   font-family: 'Anton', sans-serif;
   color: rgba(255,0,0, 0.6);
-  font-size: 30px;
+  font-size: 23px;
 }
 
 .buildings h3 a {
   color: rgba(255,0,0, 0.6);
-  font-size: 45px;
+  font-size: 34px;
   font-family: 'Lobster', cursive;
   line-height: 1.25;
 }
@@ -110,7 +108,7 @@ ul h4 a:hover,
 .lone.building h4 a,
 ul h4 a {
   color: rgba(255,0,0, 0.6);
-  font-size: 35px;
+  font-size: 25px;
   font-family: 'Lobster', cursive;
   line-height: 1.75;
 }
