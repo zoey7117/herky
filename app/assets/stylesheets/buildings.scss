@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 html body {
-  background: url("cityscape.png");
+  background-image: url('cityscape.png');
+  // background: url("cityscape.png");
 
   background-size: 100%;
   background-size: cover;
