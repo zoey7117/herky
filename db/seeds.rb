@@ -32,3 +32,4 @@ a9 = Apartment.create(apt_num: '7c', size: 500, num_rooms: 2, num_windows: 2, bu
 
 User.create(id: 1, name: 'lola', email: 'lola@gmail.com', password: 'password', admin: true)
 User.create(id: 3, name: 'tookie', email: 'tookie@gmail.com',password: 'password', admin: true)
+User.create(id: 4, name: 'admin', email: 'admin@gmail.com',password: 'admin', admin: true)
