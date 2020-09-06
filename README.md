@@ -1,24 +1,17 @@
-# README
+# Abode Haven
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Instructions
+To run this app:
 
-Things you may want to cover:
+Control click on index.html.
 
-* Ruby version
+In the bottom of the flywheel click on either Open In Default Browser or Open In Other Browsers, then select a browser.
 
-* System dependencies
+Your browser will automatically launch the Match Game app to its home page.
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Built with
+• Javascript <br/>
+• CSS <br/>
+• HTML <br/>
+• Deployed with Netlify
