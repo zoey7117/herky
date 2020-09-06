@@ -19,4 +19,4 @@ If you'd like to login as admin: email is lola@gmail.com, password: password.
 • Ruby on Rails <br/>
 • Postgres <br/>
 • CSS <br/>
-• Deployed with Netlify
+• Deployed with Heroku
