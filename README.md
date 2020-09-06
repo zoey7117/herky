@@ -11,7 +11,7 @@ Run rails db:create, rails db:migrate and rails db:seed to seed the database.
 
 After the database is set up, run 'rails s' in terminal to start the rails server.
 
-If you'd like to login as admin: email is lola@gmail.com, password: password.
+If you'd like to login as admin: email is lola@gmail.com, password is password.
 
 
 
