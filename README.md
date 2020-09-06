@@ -1,17 +1,22 @@
 # Abode Haven
 
+This app is for the fictitious Abode Haven's building management admin and their apartments. Apartment seekers can view all available apartments. There's a login for admin to do their business.
+
 ## Instructions
 To run this app:
 
-Control click on index.html.
+Clone this repo, then run 'bundle install'.
 
-In the bottom of the flywheel click on either Open In Default Browser or Open In Other Browsers, then select a browser.
+Run rails db:create, rails db:migrate and rails db:seed to seed the database.
 
-Your browser will automatically launch the Match Game app to its home page.
+After the database is set up, run 'rails s' in terminal to start the rails server.
+
+If you'd like to login as admin: email is lola@gmail.com, password: password.
+
 
 
 ## Built with
-• Javascript <br/>
+• Ruby on Rails <br/>
+• Postgres <br/>
 • CSS <br/>
-• HTML <br/>
 • Deployed with Netlify
